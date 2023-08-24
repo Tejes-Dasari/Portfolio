@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Internships and Academic Projects</title>
+    <title>Skills and Achievements</title>
     <style>
       @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
 
@@ -13,80 +13,148 @@
         margin: 0;
         padding: 0;
       }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
+
+      .legend {
+        background-color: #3b3f55;
+        color: aliceblue;
         padding: 20px;
-        color: white;
+        margin: 20px;
+        border-radius: 5px;
       }
+
       h1 {
-        font-family: "Raleway", sans-serif;
-        font-size: 28px;
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  margin-bottom: 0;
+  padding: 10px 30px; /* Adjust padding for spacing */
+  border: 2px solid aliceblue; /* Add border styling */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  display: inline-block;
+}
+
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .card {
+        background-color: #f4f4f4; /* Change the background color */
+        border-radius: 5px;
+        padding: 15px;
+        width: calc(33.33% - 10px);
+        box-sizing: border-box;
         margin-bottom: 20px;
-        position: relative;
-        color:aliceblue;
+        text-align: center;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
       }
-      h1::after {
-        content: "";
-        display: block;
-        width: 100px;
-        height: 2px;
-        background-color: white;
-        position: absolute;
-        bottom: -10px; /* Adjust this value to position the line */
-        left: 0;
+
+      .programming-languages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
-      h2 {
-        font-family: "Raleway", sans-serif;
-        font-size: 24px;
-        margin-bottom: 15px;
-        color:rgb(160, 216, 49);
+
+      .programming-languages h3 {
+        color: #2e3141;
+        margin-top: 0;
+        border: 2px solid #2e3141; /* Add border styling */
+        padding: 10px; /* Add some padding for spacing */
+        border-radius: 5px; /* Add border radius for rounded corners */
       }
-      p {
-        font-size: 18px;
-        margin-bottom: 15px;
-        font-style: italic;
+
+      .programming-languages img {
+        max-width: 100px; /* Increased image size */
+        margin: 10px; /* Added margin for spacing */
       }
+
+      .images-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .images-container img {
+        max-width: 100px;
+        height: auto;
+        margin: 10px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow */
+      }
+
+      @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 10px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>INTERSHIPS AND ACADEMIC PROJECTS</h1>
-      <br />
-
-      <h2>SKILLS</h2>
-      <p>
-        <strong>TECHNICAL SKILLS - </strong> Proficient in Python, SQL, R,
-        Excel, and Power BI. Skilled in JavaScript for web development.
-        <br /><br />
-        <strong>MATHEMATICS - </strong> Strong foundation in Linear Algebra,
-        Statistics, and Probability. <br /><br />
-        <strong>SOFT SKILLS - </strong> Exceptional willingness to learn,
-        effective time management, and adaptability to evolving situations.<br /><br />
-        <strong>LANGUAGES - </strong> English, Hindi, Telugu.
-      </p>
-      <br />
-
-      <h2>ACHIVEMENTS</h2>
-      <p>
-        <strong>R&D PROJECT SUCCESS - </strong> Spearheaded a successful R&D
-        project, crafting a robust capacity-building program that attracted an
-        NGO partnership and secured substantial funds for our university. This
-        impactful initiative has set the stage for an advanced R&D project,
-        poised to establish an MSME Excellence Center. The university's plan to
-        train 100 MSMEs underlines the program's promising trajectory.
-        <br /><br />
-        <strong>TEACHING ASSISTANT & STUDENT CO-ORDINATOR -</strong> Actively
-        contribute as a Teaching Assistant for the advanced R&D program,
-        concurrently fulfilling the role of Student Coordinator. This dual role
-        reflects my dedication to both learning and facilitating growth.
-        <br /><br />
-        <strong>NATIONAL CONFERENCE PRESENTATION - </strong> Presented the R&D
-        project as a research paper at a prestigious national conference hosted
-        by Raffles University, Neemrana. The accompanying certificate of
-        presentation acknowledges the significance of my contributions and
-        dedication to sharing knowledge.
-      </p>
+      <div class="legend">
+        <h1>SKILLS</h1>
+        <div class="card-container">
+          <div class="card programming-languages">
+            <h3 style="margin-bottom:50px;">Programming Languages</h3>
+            <div class="images-container">
+              <img src="images/pyLogo.jpg" alt="Python" />
+              <img src="images/RLogo.jpg" alt="R" />
+              <img src="images/JS.jpg" alt="JavaScript" />
+            </div>
+          </div>
+          <div class="card programming-languages">
+            <h3>Data Analysis and Manipulation</h3>
+            <div class="images-container">
+              <img src="images/SQL.webp" alt="SQL" />
+              <img src="images/Mongo.webp" alt="Mongo" />
+              <img src="images/Excel.png" alt="Excel" />
+              <img src="images/Power-BI-Symbol.png" alt="PowerBI" />
+            </div>
+          </div>
+          <div class="card programming-languages">
+            <h3 style="margin-bottom: 50px;">Mathematical Skills</h3>
+            <div class="images-container">
+              <img src="images/Stats.jpg" alt="Stats" />
+              <img src="images/Prob.webp" alt="Probability" />
+              <img src="images/LA.png" alt="Linear Algebra" />
+            </div>
+          </div>
+          <div class="card programming-languages">
+            <h3 style="margin-bottom: 50px;">Python Libraries</h3>
+            <div class="images-container">
+              <img src="images/Pandas.png" alt="Pandas" />
+              <img src="images/Numpy.jpg" alt="Numpy" />
+              <img src="images/Scikit.svg" alt="Scikit" />
+            </div>
+          </div>
+          <div class="card programming-languages">
+            <h3>Web Development and Other</h3>
+            <div class="images-container">
+              <img src="images/HC.png" alt="HTMLCSS" />
+              <img src="images/React.png" alt="React" />
+              <img src="images/Postman.jpg" alt="Postman" />
+              <img src="images/git.png" alt="Git" />
+            </div>
+          </div>
+          <div class="card programming-languages">
+            <h3>Soft Skills</h3>
+            <div class="images-container">
+              <img src="images/CS.png" alt="HTMLCSS" />
+              <img src="images/WL.png" alt="React" />
+              <img src="images/Adap.png" alt="Postman" />
+              <img src="images/TM.png" alt="Git" />
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
