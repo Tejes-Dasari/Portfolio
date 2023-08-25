@@ -13,94 +13,188 @@
         margin: 0;
         padding: 0;
       }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
+
+      .legend {
+        background-color: #2e3141;
+        color: aliceblue;
         padding: 20px;
-        color: white;
+        margin: 20px;
+        border-radius: 5px;
+        background-image: linear-gradient(
+            to top,
+            rgba(46, 49, 65, 0.8),
+            rgba(46, 49, 65, 0.8)
+          ),
+          url(../../images/bg.jpg);
+        background-size: auto, cover;
+        background-position: center, center;
       }
-      h1 {
+
+      h3 {
         font-family: "Raleway", sans-serif;
         font-size: 28px;
-        margin-bottom: 20px;
-        position: relative;
-        color: aliceblue;
+        margin-bottom: 0;
+        padding: 10px 30px;
+        border: 1px solid aliceblue;
+        border-radius: 5px;
+        display: inline-block;
       }
-      h1::after {
-        content: "";
-        display: block;
-        width: 100px;
-        height: 2px;
-        background-color: white;
-        position: absolute;
-        bottom: -10px; /* Adjust this value to position the line */
-        left: 0;
+
+      .card-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
       }
-      h2 {
+
+      .card {
+        flex: 1;
+        padding: 20px;
+        border: 2px dashed aliceblue;
+        border-radius: 5px;
+        margin-right: 50px;
+      }
+
+      .card:last-child {
+        margin-right: 0; /* Remove margin from the last card */
+      }
+
+      h4 {
         font-family: "Raleway", sans-serif;
-        font-size: 24px;
-        margin-bottom: 15px;
-        color: rgb(160, 216, 49);
-      }
-      p {
         font-size: 18px;
-        margin-bottom: 15px;
-        font-style: italic;
+        border-bottom: 1px solid aliceblue;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
       }
+
+      p {
+        font-size: 19px;
+      }
+
+      .project-container {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 40px;
+      }
+
+      .project-image img {
+        flex: 1;
+        max-width: 200px;
+        height: auto;
+      }
+
+      .project-description {
+        flex: 2;
+        padding-left: 20px;
+      }
+
+      .project-description h4 {
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      h5 {
+        border: 1px solid aliceblue;
+        border-radius: 5px;
+        display: inline;
+        padding: 5px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:link,
+      a:visited {
+        color: aliceblue; /* Change this color to your preference */
+      }
+
+      a:hover {
+        color: yellow;
+      }
+
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>INTERSHIPS AND ACADEMIC PROJECTS</h1>
-      <br />
-
-      <h2>Internships:</h2>
-      <p>
-        <strong>Global Hosiery</strong><br />
-        <strong>Position:</strong> Head of Research<br />
-        <strong>Duration:</strong> Jun 2023 - Present<br />
-        As I embarked on my journey with Global Hosiery, I stepped into the role
-        of Head of Research, diving into the realm of marketing and production
-        decisions. In every task, I orchestrated a collection of insights that
-        guided the company's strategy. One important aspect of my role was
-        ensuring a smooth collaboration between our design and manufacturing
-        teams, blending creativity with practicality. Additionally, I embraced
-        modern methods by utilizing e-commerce platforms, effectively using
-        their potential to reach a wider audience with our products.
-      </p>
-
-      <p>
-        <strong>Teaching Assistant & Student Coordinator</strong><br />
-        <strong>Organization:</strong> NIIT University<br />
-        <strong>Duration:</strong> May 2023 - Present<br />
-        My journey at NIIT University took me to the realm of education, where I
-        became a Teaching Assistant and Student Coordinator. Guiding volunteers
-        through the intricacies of Digital Empowerment for MSMEs, I experienced
-        the joy of igniting knowledge and fostering growth. Beyond the
-        classroom, I also took on the responsibility of coordinating a
-        capacity-building program under the community connect of MSME
-        Development. This role enabled me to witness firsthand the
-        transformative power of education in driving sustainable change.
-      </p><br>
-
-      <h2>Academic Projects:</h2>
-      <p>
-        <strong>R&D Project for Digital Empowerment of Indian MSMEs</strong
-        ><br />
-        Stepping into the realm of research and development, I led an impactful
-        project focused on Digital Empowerment for Indian MSMEs. This venture
-        saw me creating a comprehensive capacity-building program that not only
-        addressed the unique challenges faced by these enterprises but also
-        secured a collaboration with an NGO to ensure the widest reach. The
-        culmination of these efforts was the securing of substantial
-        funding—150,000 Rs—underscoring the project's significance and the
-        dedication that went into its realization.
-      </p>
-
-      <p>
-        <strong>Capstone - MERN Application for Healthcare at NIIT University</strong><br />
-        The highlight of my academic journey was creating a MERN application aimed for healthcare management at NIIT University. In this effort, I skillfully combined my technical expertise with a deep comprehension. This application increased my confidence, leading to an excellent experience overall.
-      </p>
+      <div class="legend">
+        <h3>Internships</h3>
+        <div class="card-container">
+          <div class="card">
+            <h4>
+              GLOBAL HOSIERY <br /><br />
+              Head of Research (Jun 2023 - Present)
+            </h4>
+            <p>
+              As I embarked on my journey with Global Hosiery, I stepped into
+              the role of Head of Research, diving into the realm of marketing
+              and production decisions. In every task, I orchestrated a
+              collection of insights that guided the company's strategy. One
+              important aspect of my role was ensuring a smooth collaboration
+              between our design and manufacturing teams, blending creativity
+              with practicality. Additionally, I embraced modern methods by
+              utilizing e-commerce platforms, effectively using their potential
+              to reach a wider audience with our products.
+            </p>
+          </div>
+          <div class="card">
+            <h4>
+              NIIT UNIVERSITY <br /><br />
+              Teaching Assitant & Student Coordinator (May 2023 - Present)
+            </h4>
+            <p>
+              My journey at NIIT University took me to the realm of education,
+              where I became a Teaching Assistant and Student Coordinator.
+              Guiding volunteers through the intricacies of Digital Empowerment
+              for MSMEs, I experienced the joy of igniting knowledge and
+              fostering growth. Beyond the classroom, I also took on the
+              responsibility of coordinating a capacity-building program under
+              the community connect of MSME Development. This role enabled me to
+              witness firsthand the transformative power of education in driving
+              sustainable change.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="legend">
+        <h3>Academic and Personal Projects</h3>
+        <div class="project-container">
+          <div class="project-image">
+            <img src="images/DE.jpg" alt="Project Image" />
+          </div>
+          <div class="project-description">
+            <h4>
+              Digital Empowerment of Indian MSMEs (Micro, Small, Medium scale
+              Enterprises)
+            </h4>
+            <p>
+              R&D Project for Digital Empowerment of Indian MSMEs stepping into
+              the realm of research and development. I successfully developed a
+              comprehensive capacity-building program that not only addressed
+              the unique challenges faced by these enterprises but also secured
+              a collaboration with an NGO to ensure the widest reach, with this
+              effort, I secured a funding of 150,000 Rs for NIIT University.
+            </p>
+            <h5><a href="brochure.html">Check Brochure</a></h5>
+          </div>
+        </div>
+        <br>
+        <div class="project-container">
+          <div class="project-image">
+            <img src="images/MERN.png" alt="Project Image" />
+          </div>
+          <div class="project-description">
+            <h4>
+              Capstone - MERN Application for Healthcare Centre
+            </h4>
+            <p>
+              The highlight of my academic journey was creating a MERN application aimed for healthcare management at NIIT University. In this effort, I skillfully combined my technical expertise with a deep comprehension. This application increased my confidence, leading to an excellent experience overall.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>R for Data Science Certificate</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-            background-color: #2e3141;
-        }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #2e3141;
+        background-image: linear-gradient(
+            to top,
+            rgba(46, 49, 65, 0.8),
+            rgba(46, 49, 65, 0.8)
+          ),
+          url(../../images/bg.jpg);
+        background-size: auto, cover;
+        background-position: center, center;
+      }
 
+      .card {
+        text-align: center;
+        padding: 20px;
+        border-radius: 5px;
+        border: 2px solid aliceblue;
+      }
+
+      .card img {
+        width: 850px;
+        height: 550px;
+      }
+
+      h2 {
+        color: aliceblue;
+      }
+
+      @media (max-width: 768px) {
         .card {
-            text-align: center;
-            padding: 20px;
-            border-radius: 5px;
-            border: 2px solid aliceblue;
-        }
-
-        .card img {
-            width: 850px; 
-            height: 550px; 
-        }
-
-        h2{
-            color: aliceblue;
-        }
-
-        @media (max-width: 768px) {
-        .card {
-          width: calc(50% - 10px);
+          flex: 0 0 calc(50% - 10px);
         }
       }
 
       @media (max-width: 480px) {
         .card {
-          width: 100%;
+          flex: 0 0 100%;
         }
       }
-
+      
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="card">
-        <img src="images/rCert.jpg" alt="Card Image">
+      <img src="images/rCert.jpg" alt="Card Image" />
     </div>
-</body>
+  </body>
 </html>
