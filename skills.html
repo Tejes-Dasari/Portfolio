@@ -23,14 +23,14 @@
       }
 
       h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 28px;
-  margin-bottom: 0;
-  padding: 10px 30px; /* Adjust padding for spacing */
-  border: 2px solid aliceblue; /* Add border styling */
-  border-radius: 5px; /* Add border radius for rounded corners */
-  display: inline-block;
-}
+        font-family: "Raleway", sans-serif;
+        font-size: 28px;
+        margin-bottom: 0;
+        padding: 10px 30px; /* Adjust padding for spacing */
+        border: 2px solid aliceblue; /* Add border styling */
+        border-radius: 5px; /* Add border radius for rounded corners */
+        display: inline-block;
+      }
 
       .card-container {
         display: flex;
@@ -40,15 +40,15 @@
       }
 
       .card {
-        background-color: #f4f4f4; /* Change the background color */
+        /* background-color:#f8f8f8; Change the background color */
         border-radius: 5px;
         padding: 15px;
         width: calc(33.33% - 10px);
         box-sizing: border-box;
         margin-bottom: 20px;
         text-align: center;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         overflow: hidden;
+        border: 1px solid aliceblue;
       }
 
       .programming-languages {
@@ -58,9 +58,9 @@
       }
 
       .programming-languages h3 {
-        color: #2e3141;
+        color: aliceblue;
         margin-top: 0;
-        border: 2px solid #2e3141; /* Add border styling */
+        border: 1px solid aliceblue; /* Add border styling */
         padding: 10px; /* Add some padding for spacing */
         border-radius: 5px; /* Add border radius for rounded corners */
       }
@@ -83,17 +83,42 @@
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow */
       }
 
-      @media (max-width: 768px) {
-    .card {
-      width: calc(50% - 10px);
-    }
-  }
+      .achievement-image {
+        padding: 5px; /* Add some padding for spacing */
+        margin: 5px; /* Add margin for spacing */
+        text-align: center;
+      }
 
-  @media (max-width: 480px) {
-    .card {
-      width: 100%;
-    }
-  }
+      .achievement-image img {
+        max-width: 130%; /* Set the maximum width to 100% */
+        height: auto;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:link,
+      a:visited {
+        color: aliceblue; /* Change this color to your preference */
+      }
+
+      a:hover{
+        color:yellow;
+      }
+
+
+      @media (max-width: 768px) {
+        .card {
+          width: calc(50% - 10px);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -102,7 +127,7 @@
         <h1>SKILLS</h1>
         <div class="card-container">
           <div class="card programming-languages">
-            <h3 style="margin-bottom:50px;">Programming Languages</h3>
+            <h3 style="margin-bottom: 50px">Programming Languages</h3>
             <div class="images-container">
               <img src="images/pyLogo.jpg" alt="Python" />
               <img src="images/RLogo.jpg" alt="R" />
@@ -116,10 +141,11 @@
               <img src="images/Mongo.webp" alt="Mongo" />
               <img src="images/Excel.png" alt="Excel" />
               <img src="images/Power-BI-Symbol.png" alt="PowerBI" />
+              <img src="images/tab.png" alt="tableau" />
             </div>
           </div>
           <div class="card programming-languages">
-            <h3 style="margin-bottom: 50px;">Mathematical Skills</h3>
+            <h3 style="margin-bottom: 50px">Mathematical Skills</h3>
             <div class="images-container">
               <img src="images/Stats.jpg" alt="Stats" />
               <img src="images/Prob.webp" alt="Probability" />
@@ -127,20 +153,20 @@
             </div>
           </div>
           <div class="card programming-languages">
-            <h3 style="margin-bottom: 50px;">Python Libraries</h3>
+            <h3 style="margin-bottom: 50px">Python Libraries</h3>
             <div class="images-container">
               <img src="images/Pandas.png" alt="Pandas" />
               <img src="images/Numpy.jpg" alt="Numpy" />
-              <img src="images/Scikit.svg" alt="Scikit" />
+              <img src="images/Scikit.jpg" alt="Scikit" />
             </div>
           </div>
           <div class="card programming-languages">
             <h3>Web Development and Other</h3>
             <div class="images-container">
-              <img src="images/HC.png" alt="HTMLCSS" />
+              <img src="images/HC.jpg" alt="HTMLCSS" />
               <img src="images/React.png" alt="React" />
               <img src="images/Postman.jpg" alt="Postman" />
-              <img src="images/git.png" alt="Git" />
+              <img src="images/git.jpg" alt="Git" />
             </div>
           </div>
           <div class="card programming-languages">
@@ -152,8 +178,23 @@
               <img src="images/TM.png" alt="Git" />
             </div>
           </div>
-          </div>
         </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="legend">
+        <h1>Certificates</h1>
+        <h4><a href="rCert.html">🔗R for Data Science - Cognitive Class</a></h4>
+        <h4>
+          <a href="gitCert.html"
+            >🔗Foundations of Git - Git Kraken</a
+          >
+        </h4>
+        <h4>
+          <a href="confCert.html"
+            >🔗Certificate of Conference</a
+          >
+        </h4>
       </div>
     </div>
   </body>
