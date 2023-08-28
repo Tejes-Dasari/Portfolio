@@ -18,7 +18,7 @@
         background-color: #2e3141;
         color: aliceblue;
         padding: 20px;
-        margin: 20px;
+        margin: 15px;
         border-radius: 5px;
         background-image: linear-gradient(
             to top,
@@ -35,9 +35,10 @@
         font-size: 28px;
         margin-bottom: 0;
         padding: 10px 30px;
-        border: 2px solid aliceblue;
+        border-bottom: 2px solid silver;
         border-radius: 5px;
         display: inline-block;
+        box-shadow: 1px 2px 4px yellowgreen;
       }
 
       .card-container {
@@ -49,9 +50,11 @@
       .card {
         flex: 1;
         padding: 20px;
-        border: 1px solid aliceblue;
+        border: 1px solid gray;
         border-radius: 5px;
         margin-right: 50px;
+        overflow: hidden;
+        box-shadow: 1px 2px 4px aliceblue;
       }
 
       .card:last-child {
@@ -61,7 +64,7 @@
       h4 {
         font-family: "Raleway", sans-serif;
         font-size: 18px;
-        border-bottom: 1px solid aliceblue;
+        border-bottom: 1px solid gray;
         padding-bottom: 10px;
         margin-bottom: 10px;
       }
@@ -94,7 +97,7 @@
       }
 
       h5 {
-        border: 1px solid aliceblue;
+        border: 1px solid silver;
         border-radius: 5px;
         display: inline;
         padding: 5px;
@@ -114,14 +117,51 @@
       }
 
       @media (max-width: 768px) {
+        .card-container {
+          flex-direction: column;
+        }
+
+        .legend {
+            padding: 10px;
+            margin: 10px;
+        }
+
         .card {
-          width: calc(50% - 10px);
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+
+        .project-container {
+          flex-direction: column;
+        }
+
+        .project-image img {
+          max-width: 100%;
+        }
+
+        .project-description {
+          padding-left: 0;
+          margin-top: 20px;
         }
       }
 
+      /* Additional media query for even smaller screens (optional) */
       @media (max-width: 480px) {
-        .card {
-          width: 100%;
+        .legend {
+          padding: 10px;
+          margin: 10px;
+        }
+
+        h3 {
+          font-size: 24px;
+        }
+
+        h4 {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 16px;
         }
       }
     </style>
@@ -137,15 +177,12 @@
               Head of Research (Jun 2023 - Present)
             </h4>
             <p>
-              As I embarked on my journey with Global Hosiery, I stepped into
-              the role of Head of Research, diving into the realm of marketing
-              and production decisions. In every task, I orchestrated a
-              collection of insights that guided the company's strategy. One
-              important aspect of my role was ensuring a smooth collaboration
-              between our design and manufacturing teams, blending creativity
-              with practicality. Additionally, I embraced modern methods by
-              utilizing e-commerce platforms, effectively using their potential
-              to reach a wider audience with our products.
+              - Drive research on marketing and production decisions <br />
+              - Ensured seamless coordination between design and manufacturing
+              teams <br />
+              - Utilizing e-commerce platforms to sell products<br /><br />
+              <b>Skills: </b>Research Skills, Content Creation, SEO, Wordpress,
+              Canva
             </p>
           </div>
           <div class="card">
@@ -154,15 +191,10 @@
               Teaching Assitant & Student Coordinator (May 2023 - Present)
             </h4>
             <p>
-              My journey at NIIT University took me to the realm of education,
-              where I became a Teaching Assistant and Student Coordinator.
-              Guiding volunteers through the intricacies of Digital Empowerment
-              for MSMEs, I experienced the joy of igniting knowledge and
-              fostering growth. Beyond the classroom, I also took on the
-              responsibility of coordinating a capacity-building program under
-              the community connect of MSME Development. This role enabled me to
-              witness firsthand the transformative power of education in driving
-              sustainable change.
+              - Teaching volunteers on Digital Empowerment of MSMEs <br />
+              - Student co-ordinator for capacity building program under
+              community connect of MSME Development <br /><br />
+              <b>Skills: </b>Teaching Skills, E-commerce Tools, Adaptability
             </p>
           </div>
         </div>
@@ -203,7 +235,8 @@
               application aimed for healthcare management at NIIT University. In
               this effort, I skillfully combined my technical expertise with a
               deep comprehension. This application increased my confidence,
-              leading to an excellent experience overall.
+              leading to an excellent experience overall.<br><br>
+              <b>Technologies Used: </b>MongoDB, Express JS, React JS, Node JS, Git, Postman API
             </p>
           </div>
         </div>
