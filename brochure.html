@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Capacity Building Program Brochure</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-            background-color: #2e3141;
-            background-image: linear-gradient(
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #2e3141;
+        background-image: linear-gradient(
             to top,
             rgba(46, 49, 65, 0.8),
             rgba(46, 49, 65, 0.8)
@@ -21,37 +21,41 @@
           url(images/bg.jpg);
         background-size: auto, cover;
         background-position: center, center;
-        }
+        background-repeat: no-repeat;
+      }
 
-        .card {
-            text-align: center;
-            padding: 20px;
-            border-radius: 5px;
-            border: 2px solid aliceblue;
-        }
+      .card {
+        text-align: center;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid silver;
+        box-shadow: 1px 2px 5px yellowgreen;
+      }
 
-        .card img {
-            width: 850px; 
-            height: 550px; 
-        }
+      .card img {
+        width: 750px;
+        height: 450px;
+        max-width: 100%;
+        height: auto;
+      }
 
-        h2{
-            color: aliceblue;
-        }
+      h2 {
+        color: aliceblue;
+      }
 
-        .arrow-btn {
-            font-size: 24px;
-            color: white;
-            cursor: pointer;
-            user-select: none;
-            margin-top: 20px;
-        }
+      .arrow-btn {
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+        margin-top: 20px;
+      }
 
-        .arrow-btn:hover {
-            color: lightgray;
-        }
+      .arrow-btn:hover {
+        color: lightgray;
+      }
 
-        @media (max-width: 768px) {
+      @media (max-width: 768px) {
         .card {
           width: calc(50% - 10px);
         }
@@ -62,40 +66,38 @@
           width: 100%;
         }
       }
-
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="card">
-        <img id="image" src="images/1.png" alt="Card Image">
-        <div class="arrow-btn" id="prev-btn">&larr;</div>
-        <div class="arrow-btn" id="next-btn">&rarr;</div>
+      <img id="image" src="images/1.png" alt="Card Image" />
+      <div class="arrow-btn" id="prev-btn">&larr;</div>
+      <div class="arrow-btn" id="next-btn">&rarr;</div>
     </div>
 
     <script>
-        const images = ["images/1.png", "images/2.png"]; // Replace with your image URLs
-        let currentIndex = 0;
+      const images = ["images/1.png", "images/2.png"]; // Replace with your image URLs
+      let currentIndex = 0;
 
-        const imageElement = document.getElementById("image");
-        const prevButton = document.getElementById("prev-btn");
-        const nextButton = document.getElementById("next-btn");
+      const imageElement = document.getElementById("image");
+      const prevButton = document.getElementById("prev-btn");
+      const nextButton = document.getElementById("next-btn");
 
-        function updateImage() {
-            imageElement.src = images[currentIndex];
-        }
+      function updateImage() {
+        imageElement.src = images[currentIndex];
+      }
 
-        prevButton.addEventListener("click", () => {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            updateImage();
-        });
+      prevButton.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImage();
+      });
 
-        nextButton.addEventListener("click", () => {
-            currentIndex = (currentIndex + 1) % images.length;
-            updateImage();
-        });
+      nextButton.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage();
+      });
 
-        updateImage(); // Initial image load
+      updateImage(); // Initial image load
     </script>
-</body>
-
+  </body>
 </html>
